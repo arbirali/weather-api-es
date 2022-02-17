@@ -3,8 +3,9 @@ import axios from 'axios';
 
 import renderWeather from './helper/weather';
 import handleError from './helper/hanlde-error';
+import constants from './constants';
 
-const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather';
+let { weatherUrl, appid } = constants;
 
 (function () {
 
