@@ -8,7 +8,6 @@ import constants from './constants';
 let { weatherUrl, appid } = constants;
 
 (function () {
-
   $('#searchForm').on('submit', function(e) {
     e.preventDefault();
 
@@ -20,7 +19,5 @@ let { weatherUrl, appid } = constants;
     })
     .then(renderWeather)
     .catch(handleError);
-
   });
-
 }) (axios, $);
